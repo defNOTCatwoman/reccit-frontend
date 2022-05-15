@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div>
+        <a aria-label="Home" class="logo" routerLink="/">
+        
+            <img src="assets\reccit.png">
+           
+     
+        </a>
+      </div>
+  
+      <ul class="nav navbar-nav navbar-right">
+        <div *ngIf="isLoggedIn">
+            <div> <button button (click)="goToUserProfile()" class="userdetails" id="dropdownBasic1" ngbDropdownToggle>
+                <img class="account-icon" src="https://www.redditstatic.com/avatars/avatar_default_08_D4E815.png">
+                {{username}}
+            </button>
+            
+                <button (click)="logout()" class="float-right sign-up mr-2">Logout</button>
+            </div>
+           
+        </div>            
+        <div *ngIf="!isLoggedIn">
+            <a routerLink="/sign-up" class="float-right sign-up mr-2">Sign up</a>
+            <a routerLink="/login" class="float-right login mr-2">Login</a>
+        </div>
+      </ul>
+    </div>
+  </nav> 
+  

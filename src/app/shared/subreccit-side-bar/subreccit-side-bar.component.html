@@ -1,0 +1,11 @@
+<div class="sidebar-view-subreccit">
+    <div style="color: black; font-weight: bold">Browse Subreccits</div>
+    <hr />
+    <span *ngFor="let subreccit of subreccits">
+        <span class="subreccit-text"><a routerLink="/view-subreccit/{{subreccit.id}}">{{subreccit.name}}</a></span>
+        <hr />
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-subreccits">View All</a>
+    </div>
+</div>
