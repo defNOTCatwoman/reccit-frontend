@@ -1,6 +1,8 @@
-# Reccit
+# Reccit - FrontEnd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+
+## Reccit is a reddit inspired project for book lovers to get book recommendations based on specific genres or post their own recommendations for the reccit users.
 
 ## Development server
 
